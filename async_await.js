@@ -50,3 +50,12 @@ async function newFunction(){
 }
 
 newFunction();
+
+//Async-Await with fetch api
+async function fetchUsers(){
+  const users = await fetch('https://jsonplaceholder.typicode.com/users');
+  const data = users.json();
+  console.log(data);
+}
+
+fetchUsers();
