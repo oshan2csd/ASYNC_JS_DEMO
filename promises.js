@@ -51,10 +51,10 @@ function createPosts(post){
   });
 }
 
-//if it resolved ==> then comes to .then part
-createPosts({title: 'post three', body:'this is post three'})
-.then(getPosts)
-.catch(e => console.log(e));
+// //if it resolved ==> then comes to .then part
+// createPosts({title: 'post three', body:'this is post three'})
+// .then(getPosts)
+// .catch(e => console.log(e));
 
 //for multiple promises see below code 
 //above code has commented out
@@ -66,7 +66,7 @@ const promise3 = new Promise((resolve, reject) =>{
   setTimeout(resolve, 2000, 'good bye');
 }
 );
-//from fetch API
+//for this promise creation, fetch API has been used
 //need to parse into json objects
 const promise4 = fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json());
 
