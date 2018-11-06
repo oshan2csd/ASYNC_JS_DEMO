@@ -51,10 +51,10 @@ function createPosts(post){
   });
 }
 
-// //if it resolved ==> then comes to .then part
-// createPosts({title: 'post three', body:'this is post three'})
-// .then(getPosts)
-// .catch(e => console.log(e));
+// ///if it resolved ==> then comes to .then part
+//  createPosts({title: 'post three', body:'this is post three'})
+//  .then(getPosts)
+//  .catch(e => console.log(e));
 
 //for multiple promises see below code 
 //above code has commented out
